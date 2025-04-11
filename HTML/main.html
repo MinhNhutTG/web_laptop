@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Shop</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <script src="../JS/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Asset/icon/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="HeaderPage">
+        <div class="header_notifi"> Alert </div>
+        <div class="header_main ">
+            <div class="header_main-top d-flex ">
+                <div class="logo_branch">Computer Shop</div>
+                <div class="search_form d-flex">
+                    <input class="search_input"></input>
+                    <div class="search_buttom"><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+                <div class="notifi">
+                    <i class="fa-solid fa-bell iconheader iconheaders"></i>
+                    <div class="reddot"></div>
+                    <a class="textIcon" href="#">Thông báo</a>
+                </div>
+                <div class="user">
+                    <i class="fa-solid fa-user iconheaders"></i>
+                    <a class="textIcon" href="#">Đăng nhập / Đăng ký</a>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping iconheader iconheaders"></i>
+                    <div class="reddot"></div>
+                    <a class="textIcon" href="#">Giỏ hàng</a>
+                </div>
+            </div>
+            <div class="header_main-bottom ">
+                <ul class="navbar">
+                    <li class="nav-tiem"><a href="#" class="nav_link">Trang chủ</a></li>
+                    <li class="nav-tiem"><a href="#" class="nav_link">Macbook</a></li>
+                    <li class="nav-tiem"><a href="#" class="nav_link">Asus</a></li>
+                    <li class="nav-tiem"><a href="#" class="nav_link">Dell</a></li>
+                    <li class="nav-tiem"><a href="#" class="nav_link">Acer</a></li>
+                    <li class="nav-tiem"><a href="#" class="nav_link">Linh kiện</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="Panel">
+        <img src="/Asset/Image/image.png" alt="">
+    </div>
+
+    <div class="Content d-flex">
+        <div class="leftSide"></div>
+        <div class="CenterPage">
+            <div class="rowProduct">
+                <div class="rowProduct_top d-flex">
+                    <p class="rowProduct_title">Macbook</p>
+                    <a href="#" class="rowProductViewall">Xem tất cả</a>
+                </div>
+                <div class="rowProduct_bottom d-flex ">
+                    <div class="btnPre" onclick="slide(-1)"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                    <div class="Cards">
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+
+                    </div>
+                    <div class="btnNext" onclick="slide(1)"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </div>
+            </div>
+            <div class="rowProduct">
+                <div class="rowProduct_top d-flex">
+                    <p class="rowProduct_title">Macbook</p>
+                    <a href="#" class="rowProductViewall">Xem tất cả</a>
+                </div>
+                <div class="rowProduct_bottom d-flex ">
+                    <div class="btnPre" onclick="slide(-1)"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                    <div class="Cards">
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+
+                    </div>
+                    <div class="btnNext" onclick="slide(1)"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </div>
+            </div>
+            <div class="rowProduct">
+                <div class="rowProduct_top d-flex">
+                    <p class="rowProduct_title">Macbook</p>
+                    <a href="#" class="rowProductViewall">Xem tất cả</a>
+                </div>
+                <div class="rowProduct_bottom d-flex ">
+                    <div class="btnPre" onclick="slide(-1)"><i class="fa-solid fa-circle-chevron-left"></i></div>
+                    <div class="Cards">
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+                        <div class="Card" id="Card">
+                            <div class="CardIMG">
+                                <img src="../Asset/Image/imgProd.png" alt="" class="Card_img">
+                            </div>
+                            <div class="Card_Brand">Asus</div>
+                            <div class="Card_NameProduct">Màn hình LG 24MR400-B.ATV 23.8 inch (1920x1080/IPS/100Hz/5ms) 
+                            </div>
+                            <div class="Card_Price">2.250.000 đ</div>
+                            <div class="d-flex " style="margin-left: 10px;">
+                                <div class="Card_oldPrice">2.394.000 đ</div>
+                                <div class="discount-percent">-16%</div>
+                            </div>
+                            <div class="Atc">Thêm vào giỏ </div>
+                        </div>
+
+                    </div>
+                    <div class="btnNext" onclick="slide(1)"><i class="fa-solid fa-circle-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="rightSide"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Cột 1: Logo & giới thiệu -->
+          <div class="footer-column">
+            <h2>LaptopZone</h2>
+            <p>Chuyên cung cấp laptop và phụ kiện chính hãng. Cam kết chất lượng, uy tín và hỗ trợ khách hàng tận tình.</p>
+          </div>
+      
+          <!-- Cột 2: Thương hiệu -->
+          <div class="footer-column">
+            <h3>Thương hiệu</h3>
+            <ul>
+              <li><a href="#">Dell</a></li>
+              <li><a href="#">HP</a></li>
+              <li><a href="#">Asus</a></li>
+              <li><a href="#">Acer</a></li>
+              <li><a href="#">Apple</a></li>
+            </ul>
+          </div>
+      
+          <!-- Cột 3: Hỗ trợ -->
+          <div class="footer-column">
+            <h3>Hỗ trợ</h3>
+            <ul>
+              <li><a href="#">Chính sách bảo hành</a></li>
+              <li><a href="#">Hướng dẫn mua hàng</a></li>
+              <li><a href="#">Phương thức thanh toán</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+      
+          <!-- Cột 4: Liên hệ -->
+          <div class="footer-column">
+            <h3>Liên hệ</h3>
+            <ul>
+              <li>📍 123 Trường Chinh, Q.Tân Bình, TP.HCM</li>
+              <li>📞 0901 234 567</li>
+              <li>✉️ support@laptopzone.vn</li>
+            </ul>
+            <div class="social-icons">
+              <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+              <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+              <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          © 2025 LaptopZone. All rights reserved.
+        </div>
+      </footer>
+      
+
+
+
+
+    <script>
+        let index = 0;
+        const slider = document.getElementById("Card");
+         
+        function slide(direction) {
+          const total = slider.children.length;
+          index += direction;
+      
+          if (index < 0) index = 0;
+          if (index > total - 1) index = total - 1;
+      
+          slider.style.transform = `translateX(-${index * 200}px)`;
+        }
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

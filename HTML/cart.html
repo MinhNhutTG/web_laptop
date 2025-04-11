@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ hàng</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f8fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cart-container {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+            gap: 20px;
+        }
+
+        .cart-left {
+            flex: 3;
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            border-top: 1px solid #eee;
+            padding: 20px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .cart-item img {
+            width: 100px;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        .item-details {
+            flex: 1;
+        }
+
+        .item-name {
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .sku {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .cart-item .price {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            font-size: 13px;
+            color: #aaa;
+            margin-left: 8px;
+        }
+
+        .quantity {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .quantity button {
+            width: 24px;
+            height: 24px;
+            border: 1px solid #ccc;
+            background: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .quantity input {
+            width: 30px;
+            text-align: center;
+            border: 1px solid #ccc;
+            margin: 0 5px;
+        }
+
+        .remove-link {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .discount-info {
+            background: #f1f1f1;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #d00000;
+        }
+
+        .cart-right {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .cart-right h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .summary {
+            border-top: 1px solid #eee;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+
+        .summary div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .total {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .checkout-btn {
+            background: #0052cc;
+            color: white;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .checkout-btn:hover {
+            background: #003d99;
+        }
+
+        .banner {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .banner img {
+            width: 100%;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cart-container">
+        <!-- Giỏ hàng bên trái -->
+        <div class="cart-left">
+            <div class="cart-header">
+                <div><input type="checkbox" checked> CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ PHONG VŨ</div>
+                <a href="#" style="color:#007bff; font-size:14px;">Xóa tất cả</a>
+            </div>
+
+            <!-- Sản phẩm 1 -->
+            <div class="cart-item">
+                <img src="../Asset/Image/macbook.jpg" alt="Màn hình LG">
+                <div class="item-details">
+                    <div class="item-name">Màn hình LCD LG 23.8" 24MR400-B.ATV</div>
+                    <div class="sku">SKU: 231101844</div>
+                    <div>
+                        <span class="price">2.250.000đ</span>
+                        <span class="old-price">2.690.000đ</span>
+                    </div>
+                    <div class="quantity">
+                        <button>-</button>
+                        <input type="text" value="1">
+                        <button>+</button>
+                    </div>
+                    <a href="#" class="remove-link">Xóa</a>
+                </div>
+                <div class="price">2.250.000đ</div>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="cart-item">
+                <img src="../Asset/Image/macbook.jpg" alt="Acer Nitro">
+                <div class="item-details">
+                    <div class="item-name">Màn hình LCD Gaming Acer 27 inch Nitro KG270</div>
+                    <div class="sku">SKU: 250116334</div>
+                    <div>
+                        <span class="price">3.490.000đ</span>
+                        <span class="old-price">3.690.000đ</span>
+                    </div>
+                    <div class="quantity">
+                        <button>-</button>
+                        <input type="text" value="1">
+                        <button>+</button>
+                    </div>
+                    <a href="#" class="remove-link">Xóa</a>
+                </div>
+                <div class="price">3.490.000đ</div>
+            </div>
+
+            <div class="discount-info">
+                Giảm 100.000đ (áp dụng vào giá sản phẩm)
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="cart-item">
+                <img src="../Asset/Image/macbook.jpg" alt="RAM Kingston">
+                <div class="item-details">
+                    <div class="item-name">Ram Desktop Kingston Fury Beast 16GB DDR4</div>
+                    <div class="sku">SKU: 230309396</div>
+                    <div>
+                        <span class="price">989.000đ</span>
+                        <span class="old-price">1.249.000đ</span>
+                    </div>
+                    <div class="quantity">
+                        <button>-</button>
+                        <input type="text" value="1">
+                        <button>+</button>
+                    </div>
+                    <a href="#" class="remove-link">Xóa</a>
+                </div>
+                <div class="price">989.000đ</div>
+            </div>
+        </div>
+
+        <!-- Tóm tắt bên phải -->
+        <div class="cart-right">
+            <h3>Khuyến mãi</h3>
+            <input type="text" placeholder="Chọn hoặc nhập khuyến mãi"
+                style="width:100%; padding:8px; margin-bottom:10px; border:1px solid #ccc; border-radius: 4px;">
+
+            <div class="summary">
+                <div><span>Tổng tạm tính</span><span>6.729.000đ</span></div>
+                <div class="total"><span>Thành tiền</span><span>6.729.000đ</span></div>
+                <div style="font-size: 12px; color: #888;">(Đã bao gồm VAT)</div>
+            </div>
+
+            <button class="checkout-btn">THANH TOÁN</button>
+
+            <div class="banner">
+                <img src="https://via.placeholder.com/250x80?text=Khuyen+Mai" alt="Khuyến mãi">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
